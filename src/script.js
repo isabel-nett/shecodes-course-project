@@ -20,11 +20,13 @@ function formatDate() {
 
 formatDate();
 
+
 let searchBox = document.getElementById("searchBox");
 let searchButton = document.getElementById("searchButton");
 let temperature = document.getElementById("temperature");
 let cityName = document.getElementById("cityOutput");
 let currentLocation = document.getElementById("currentLocation");
+let weatherDescription = document.getElementById("currentDescription")
 
 function searchCity() {
   console.log("searchCity is working")
@@ -49,11 +51,27 @@ function showWeather(response) {
   let currentTemp = Math.round(response.data.main.temp);
   temperature.innerHTML = (currentTemp);
   cityName.innerHTML = response.data.name;
+  weatherDescription.innerHTML = response.data.main.description;
 }
 
 document.querySelector('#searchButton').addEventListener("click", searchCity);
 document.querySelector('#currentLocation').addEventListener("click", navigator.geolocation.getCurrentPosition(searchCurrent));
 
-//searchButton.onClick = searchCity;
-//currentLocation.onClick = navigator.geolocation.getCurrentPosition(searchCurrent);
+let quoteText = document.getElementById("quoteText");
+let quoteAuthor = document.getElementById("quoteAuthor");
 
+function getDailyQuote() {
+  console.log("getDailyQuote is working")
+ let apiQuote = "https://quotes.rest/qod?category=inspire";
+ axios.get(apiQuote).then(showDailyQuote);
+}
+
+function showDailyQuote(response) {
+  console.log("hello")
+  let quoteContent = (response.data.contents.quotes.quote);
+  let quoteBy = (response.data.contents.quotes.author);
+  quoteText.innerHTML = `" ${quoteContent} "`;
+  quoteAuthor.innerHTML = `-${quoteBy}`;
+}
+
+getDailyQuote();

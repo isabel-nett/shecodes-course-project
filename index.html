@@ -46,7 +46,7 @@
                     <div class="col">
                         <p class="card-text weather-details">
                             <span class="weather-icon">🌤</span>
-                            <span class="current-visual">Mostly sunny</span>
+                            <span class="current-visual" id="currentDescription">Mostly sunny</span>
                             <br />
                             <span class="current-precipitation">
                                 Precipitation: 15% <small>chance of</small> .05"
@@ -60,9 +60,9 @@
         </div>
     </div>
     <p class="quote">
-        "It's the journey that matters, not the destination"
+        <span id="quoteText">"It's the journey that matters, not the destination"</span>
         <br />
-        - Gabrielle Bernstein
+        <span id="quoteAuthor">- Gabrielle Bernstein</span>
     </p>
     <div class="next-five-days">
         <div class="row justify-content-center">
@@ -104,7 +104,7 @@
         </div>
     </div>
     <footer class="footer">
-        <p>Made by Isabel Barnett</p>
+        <p>Made by Isabel Barnett. <a href="https://github.com/isabel-nett/weather">View my code on GitHub.</a></p>
     </footer>
 </body>
 <script src="src/script.js"></script>
