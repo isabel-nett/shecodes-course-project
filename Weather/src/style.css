@@ -1,0 +1,131 @@
+.body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  font-family: "Pattaya", sans-serif;
+}
+
+.search-bar {
+  width: 300px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.form-control {
+  font-family: "Poppins", sans-serif;
+}
+
+#searchBox {
+  margin-right: 10px;
+}
+
+#searchButton {
+  width: 150px;
+}
+
+#currentLocation {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+
+#currentLocation:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card {
+  margin: 0 auto;
+  margin-top: 100px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
+  );
+}
+
+.city {
+  font-size: 30px;
+}
+
+.temperature {
+  fit: .text;
+  font-family: "Pattaya", sans-serif;
+  font-size: 80px;
+  line-height: 80px;
+  text-size-adjust: auto;
+}
+
+.units {
+  font-size: 20px;
+  vertical-align: 45px;
+}
+
+#Celcius,
+#Farenheit {
+  text-decoration: none;
+  color: #198754;
+}
+#Celcius:hover,
+#Farenheit:hover {
+  color: black;
+  transition: all 200ms ease-in-out;
+  text-decoration: underline;
+}
+
+.today-date {
+  font-size: 12px;
+}
+
+.weather-details {
+  text-align: left;
+}
+
+.weather-icon,
+.current-visual {
+  font-size: 30px;
+}
+
+.current-visual {
+  font-family: "Pattaya", sans-serif;
+}
+
+.current-precipitation {
+  margin-top: 20px;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.next-five-days {
+  margin-top: 70px;
+}
+
+.future-day {
+  text-align: center;
+}
+
+.day-of-week {
+  font-family: "Pattaya", sans-serif;
+}
+
+.future-temp {
+  font-weight: lighter;
+}
+
+.footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  line-height: 200px;
+  text-align: center;
+  color: rgb(102, 102, 102);
+}

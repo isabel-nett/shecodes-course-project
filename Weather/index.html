@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <a  href="" id=currentLocation>
+            Use my current location 📍
+        </a>
+        <br />
+        <div class="d-flex search-bar">
+            <input id="searchBox" type="search" placeholder="Enter a city" autofocus="on" autocomplete="off"
+                class="form-control shadow-sm" oldautocomplete="off" mmclosedfield="grp-0.6904016143925382">
+            <input id="searchButton" type="submit" value="Search" class="form-control btn btn-outline-success">
+        </div>
+        <div class="card col-lg-6">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class="card-text">
+                            <span id="cityOutput" class="city">North Pole</span>
+                            <br />
+                            <span id="temperature" class="temperature text-nowrap">0</span>
+                            <span class="units">
+                                <a href="" id="Celcius">°C</a>
+                                /
+                                <a href="" id="Farenheit">°F</a>
+                            </span>
+                            <br />
+                            <span id="todayDate" class="today-date">Today is Wednesday May 19, 2021</span>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="card-text weather-details">
+                            <span class="weather-icon">🌤</span>
+                            <span class="current-visual">Mostly sunny</span>
+                            <br />
+                            <span class="current-precipitation">
+                                Precipitation: 15% <small>chance of</small> .05"
+                            </span>
+                            <br />
+                            <span class="current-wind">Wind: NW 10mph</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="quote">
+        "It's the journey that matters, not the destination"
+        <br />
+        - Gabrielle Bernstein
+    </p>
+    <div class="next-five-days">
+        <div class="row justify-content-center">
+            <div class="col-2 future-day">
+                <span class="day-of-week">Tomorrow</span>
+                <br />
+                <span class="weather-icon">🌤</span>
+                <br />
+                <span class="future-temp">75°/53°</span>
+            </div>
+            <div class="col-2 future-day">
+                <span class="day-of-week">Friday</span>
+                <br />
+                <span class="weather-icon">🌤</span>
+                <br />
+                <span class="future-temp">75°/53°</span>
+            </div>
+            <div class="col-2 future-day">
+                <span class="day-of-week">Saturday</span>
+                <br />
+                <span class="weather-icon">🌤</i></span>
+                <br />
+                <span class="future-temp">75°/53°</span>
+            </div>
+            <div class="col-2 future-day">
+                <span class="day-of-week">Sunday</span>
+                <br />
+                <span class="weather-icon">🌤</i></span>
+                <br />
+                <span class="future-temp">75°/53°</span>
+            </div>
+            <div class="col-2 future-day">
+                <span class="day-of-week">Monday</span>
+                <br />
+                <span class="weather-icon">🌤</i></span>
+                <br />
+                <span class="future-temp">75°/53°</span>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Made by Isabel Barnett</p>
+    </footer>
+</body>
+<script src="src/script.js"></script>
+<script src="https://kit.fontawesome.com/39422dea12.js" crossorigin="anonymous"></script>
+</html>
